@@ -1,10 +1,15 @@
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 class ArithmaticTest {
-
+		
+	
 	@Test
+	@DisplayName("Addition Method")
 	void test() {
 	Arithmatic a=new Arithmatic();
 	int expected=15;
@@ -13,6 +18,7 @@ class ArithmaticTest {
 		//fail("Not yet implemented");
 	}
 	
+	@BeforeEach
 	@Test
 	void test1() {
 	Arithmatic a=new Arithmatic();
@@ -21,6 +27,8 @@ class ArithmaticTest {
 	assertEquals(expected,actual);
 		//fail("Not yet implemented");
 	}
+	
+	
 	@Test
 	void test2() {
 	Arithmatic a=new Arithmatic();
